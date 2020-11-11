@@ -1,0 +1,27 @@
+/*
+============================================================
+   LAYOUT: COLUMNS
+============================================================
+*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--space-bet {
+    @extend .row;
+    justify-content: space-between;
+  }
+}
+
+.col {
+  &--auto {
+      flex: 1 1 auto;
+  }
+
+  @each $key, $value in $percent {
+      &--#{$key} {
+          flex-basis: $value;
+          box-sizing: border-box;
+      }
+  }
+}

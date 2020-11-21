@@ -1,27 +1,83 @@
 /*
 ============================================================
-   LAYOUT: COLUMNS
+LAYOUT: COLUMNS
 ============================================================
 */
 .row {
   display: flex;
   flex-wrap: wrap;
-
+  
   &--space-bet {
     @extend .row;
     justify-content: space-between;
   }
 }
 
+// By default, col is applied to all screen size.
 .col {
+  flex: 1 1 auto;
+  
   &--auto {
-      flex: 1 1 auto;
+    flex: 0 0 auto;
   }
+  
+  &--none {
+    display: none;
+  }
+  
+  // Generates the column classes with the format col--colsize
+  // For example col--50 for a 50% column.
+  @each $key, $value in $column-size {
+    &--#{$key} {
+      flex-basis: $value;
+      box-sizing: border-box;
+    }
+  }
+}
 
-  @each $key, $value in $percent {
+// Media queries
+// Generates the column classes with the format col--screensize--colsize
+// For example col--l--50 for a 50% column, only on large screens.
+@include responsive--l {
+  .col--l {
+    flex: 1 1 auto;
+    
+    &--auto {
+      flex: 0 0 auto;
+    }
+    
+    &--none {
+      display: none;
+    }
+
+    @each $key, $value in $column-size {
       &--#{$key} {
-          flex-basis: $value;
-          box-sizing: border-box;
+        flex-basis: $value;
+        box-sizing: border-box;
       }
+    }
+  }
+}
+
+@include responsive--m {
+  .col--m {
+    flex: 1 1 auto;
+    
+    &--auto {
+      flex: 0 0 auto;
+    }
+    
+    &--none {
+      display: none;
+    }
+    
+    // Generates the column classes with the format col--colsize
+    // For example col--50 for a 50% column.
+    @each $key, $value in $column-size {
+      &--#{$key} {
+        flex-basis: $value;
+        box-sizing: border-box;
+      }
+    }
   }
 }

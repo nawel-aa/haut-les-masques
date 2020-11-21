@@ -1,0 +1,18 @@
+// Responsive
+@mixin responsive--l {
+  @media screen and (min-width: map-get($breakpoints, tablet)){
+    @content;
+  }
+}
+
+@mixin responsive--m {
+  @media screen and (min-width: map-get($breakpoints, phone + 1)){
+    @content;
+  }
+}
+
+@mixin responsive--s {
+  @media screen and (max-width: map-get($breakpoints, phone)){
+    @content;
+  }
+}

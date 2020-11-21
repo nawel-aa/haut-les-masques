@@ -1,0 +1,14 @@
+section {
+  margin: ($pad-tb * 5) 0;
+}
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: $pad;
+}
+
+.bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

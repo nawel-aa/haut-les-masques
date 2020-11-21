@@ -1,21 +1,20 @@
-$colour-primary: #0167B5;
-$colour-secondary: #013B69;
-$colour-txt: #000;
+$colour-primary: #293241;
+$colour-secondary: #EE6C4D;
+$colour-txt: #212834;
 $colour-txt-alt: #fff;
-$colour-bg: #E4E4E4;
-$colour-bg-alt: #fff;
+$colour-bg: #EDF6F9;
 
-$font-default: 'Montserrat', sans-serif;
-$font-title: 'Dosis', sans-serif;
+$font-default: 'Merriweather', serif;
+$font-title: 'Montserrat', sans-serif;
 $font-size: 1.6rem;
 
-$percent: (
-// Used for column sizing
-20:20%,25:25%, 30:30%, 33:33.333333%, 40:40%, 45:45%,48:48%, 50:50%, 60:60%,75:75%, 80:80%, 90:90%,100:100% );
+$column-size: (
+// class suffix: flex-basis value
+10: 10%, 33: 33.33333%, 50: 50%, 80: 80%, 100: 100% );
 
 $pad-side: 2rem;
 $pad-tb: 3rem;
 $pad: $pad-tb $pad-side;
-$max-width: 110rem;
+$max-width: 120rem;
 
-$breakpoints: ( tablet:1007px, mobile:641px );
+$breakpoints: ( tablet: 1007px, phone: 641px );

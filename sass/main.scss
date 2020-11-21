@@ -1,12 +1,12 @@
-// @import "utils/variables"
-// @import "utils/functions"
-// @import "utils/mixins"
-// @import "utils/placeholders"
-// @import "base/base"
-// @import "base/typography"
-// @import "components/btn"
-// @import "components/card"
-// @import "layout/footer"
-// @import "layout/container"
-@import "layout/columns"
-// @import "pages/index"
+@import "utils/variables";
+// @import "utils/functions";
+@import "utils/mixins";
+// @import "utils/placeholders";
+@import "base/base";
+@import "base/typography";
+// @import "components/btn";
+// @import "components/card";
+// @import "layout/footer";
+@import "layout/containers";
+@import "layout/columns";
+// @import "pages/index";

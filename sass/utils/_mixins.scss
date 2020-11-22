@@ -6,7 +6,7 @@
 }
 
 @mixin responsive--m {
-  @media screen and (min-width: map-get($breakpoints, phone + 1)){
+  @media screen and (min-width: (map-get($breakpoints, phone) + 1px)){
     @content;
   }
 }

@@ -4,9 +4,10 @@
 // @import "utils/placeholders";
 @import "base/base";
 @import "base/typography";
-// @import "components/btn";
-// @import "components/card";
+@import "components/stats";
+@import "components/card";
+@import "components/quote";
 // @import "layout/footer";
 @import "layout/containers";
 @import "layout/columns";
-// @import "pages/index";
+@import "pages/intro";

@@ -1,5 +1,5 @@
 section {
-  margin: ($pad-tb * 5) 0;
+  padding: ($pad-tb * 2.5) 0;
 }
 .container {
   max-width: $max-width;
@@ -11,4 +11,10 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.border-left {
+  border-left: $colour-secondary 8px solid;
+  padding: 1rem $pad-side;
+  margin: $pad-tb 0;
 }

@@ -1,0 +1,9 @@
+.card {
+  padding: $pad-tb $pad-side * 2;
+
+  &--dark {
+    @extend .card;
+    background-color: $colour-primary;
+    color: $colour-txt-alt;
+  }
+}

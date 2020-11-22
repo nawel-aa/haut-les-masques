@@ -1,0 +1,11 @@
+.intro {
+  background: url('/img/produit.png') 95% 0 / contain no-repeat;
+
+  @include responsive--m {
+    background-image: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url('/img/produit.png');
+  }
+
+  @include responsive--s {
+    background-image: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url('/img/produit.png');
+  }
+}

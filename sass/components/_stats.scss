@@ -1,0 +1,13 @@
+.stats {
+  &__title {
+    font-size: $font-size * 1.125;
+    font-weight: bold;
+    margin-bottom: $pad-tb;
+    + .stats__asterisk {
+      margin-top: -($pad-tb / 2)
+    }
+  }
+  &__asterisk {
+    font-size: $font-size * 0.75;
+  }
+}

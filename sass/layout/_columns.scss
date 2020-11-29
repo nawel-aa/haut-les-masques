@@ -1,6 +1,6 @@
 /*
 ============================================================
-LAYOUT: COLUMNS
+LAYOUT: FLEX GRID
 ============================================================
 */
 .row {
@@ -16,9 +16,11 @@ LAYOUT: COLUMNS
 // By default, col is applied to all screen size.
 .col {
   flex: 1 1 auto;
+  display: initial;
   
   &--auto {
     flex: 0 0 auto;
+    display: initial;
   }
   
   &--none {
@@ -31,6 +33,7 @@ LAYOUT: COLUMNS
     &--#{$key} {
       flex-basis: $value;
       box-sizing: border-box;
+      display: initial;
     }
   }
 }
@@ -38,33 +41,15 @@ LAYOUT: COLUMNS
 // Media queries
 // Generates the column classes with the format col--screensize--colsize
 // For example col--l--50 for a 50% column, only on large screens.
-@include responsive--l {
-  .col--l {
-    flex: 1 1 auto;
-    
-    &--auto {
-      flex: 0 0 auto;
-    }
-    
-    &--none {
-      display: none;
-    }
-
-    @each $key, $value in $column-size {
-      &--#{$key} {
-        flex-basis: $value;
-        box-sizing: border-box;
-      }
-    }
-  }
-}
 
 @include responsive--m {
   .col--m {
     flex: 1 1 auto;
+    display: initial;
     
     &--auto {
       flex: 0 0 auto;
+      display: initial;
     }
     
     &--none {
@@ -77,6 +62,31 @@ LAYOUT: COLUMNS
       &--#{$key} {
         flex-basis: $value;
         box-sizing: border-box;
+        display: initial;
+      }
+    }
+  }
+}
+
+@include responsive--l {
+  .col--l {
+    flex: 1 1 auto;
+    display: initial;
+    
+    &--auto {
+      flex: 0 0 auto;
+      display: initial;
+    }
+    
+    &--none {
+      display: none;
+    }
+
+    @each $key, $value in $column-size {
+      &--#{$key} {
+        flex-basis: $value;
+        box-sizing: border-box;
+        display: initial;
       }
     }
   }

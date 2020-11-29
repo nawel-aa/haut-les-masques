@@ -1,9 +1,20 @@
 .card {
   padding: $pad-tb $pad-side * 2;
+  background-color: $colour-alt-bg;
 
-  &--dark {
+  &--primary {
     @extend .card;
     background-color: $colour-primary;
     color: $colour-txt-alt;
+  }
+
+  &--tertiary {
+    @extend .card;
+    background-color: $colour-tertiary;
+  }
+
+  &--light-primary {
+    @extend .card;
+    background-color: $colour-primary-bg;
   }
 }

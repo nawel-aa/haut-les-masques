@@ -1,8 +1,13 @@
 $colour-primary: #293241;
 $colour-secondary: #EE6C4D;
+$colour-tertiary: #D1DCED;
+
 $colour-txt: #212834;
 $colour-txt-alt:  #EDF6F9;
-$colour-bg: #EDF6F9;
+
+$colour-alt-bg: #fff;
+$colour-primary-bg: #EDF6F9;
+$colour-secondary-bg: #FFDDD2;
 
 $font-default: 'Merriweather', serif;
 $font-title: 'Montserrat', sans-serif;
@@ -10,7 +15,7 @@ $font-size: 1.6rem;
 
 $column-size: (
 // class suffix: flex-basis value
-10: 10%, 33: 33.33333%, 50: 50%, 70: 70%, 80: 80%, 100: 100% );
+10: 10%, 33: 33.33333%, 50: 50%, 60: 60%, 70: 70%, 80: 80%, 100: 100% );
 
 $pad-side: 2rem;
 $pad-tb: 3rem;

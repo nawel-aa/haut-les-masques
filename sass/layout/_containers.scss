@@ -1,6 +1,11 @@
 section {
-  padding: ($pad-tb * 2.5) 0;
+  padding: $pad-tb 0;
+
+  @include responsive--l {
+    padding: ($pad-tb * 2.5) 0;
+  }
 }
+
 .container {
   max-width: $max-width;
   margin: 0 auto;
@@ -11,6 +16,10 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.bg-primary {
+  background-color: $colour-primary;
 }
 
 .border-left {

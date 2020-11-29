@@ -1,0 +1,17 @@
+.press {
+  position: relative;
+
+  h2 {
+    padding: 0 $pad-side;
+
+    @include responsive--l {
+      position: absolute;
+      transform: rotate(90deg);
+      transform-origin: top;
+      top: 7.5rem;
+      right: 2%;
+      white-space: nowrap;
+      width: 0;
+    }
+  }
+}

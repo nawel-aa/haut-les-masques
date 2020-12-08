@@ -1,9 +1,25 @@
 .press {
   position: relative;
+  background-image: url('../../img/fond-montagnes.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-bottom: -1px;
+  background-size: 100% 150px;
+  padding-bottom: 150px;
 
+  @include responsive--m {
+    background-size: 100% 300px;
+    padding-bottom: 200px;
+  }
+
+  @include responsive--l {
+    background-size: 100% 400px;
+    padding-bottom: 250px;
+  }
+  
   h2 {
     padding: 0 $pad-side;
-
+    
     @include responsive--l {
       position: absolute;
       transform: rotate(90deg);
@@ -13,5 +29,9 @@
       white-space: nowrap;
       width: 0;
     }
+  }
+  
+  .quote {
+    margin: 3rem 0 0 0;
   }
 }

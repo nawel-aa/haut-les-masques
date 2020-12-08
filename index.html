@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Haut les masques</title>
   <script src="https://kit.fontawesome.com/1097613d0d.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
@@ -46,34 +46,34 @@
   
   <!-- Testé et approuvé -->
   
-  <section class="bg-image tested" style="background-image: url('/img/graphs.svg');">
+  <section class="bg-image tested" style="background-image: url('img/graphs.svg');">
     <div class="container">
       <h2>Testé et approuvé</h2>
       <div class="tested__grid">
         <div>
           <div class="card--light-primary">
-            <h3>Suspendre son masque au lieu de le poser réduit les dépôts de bactéries de plus de 95%</h3>
-            <p><strong>Source :</strong> Étude très scientifique de juillet 2020, produite par une célèbre université américaine</p>
+            <h3 class="stats__title">Suspendre son masque au lieu de le poser réduit les dépôts de bactéries de plus de 95%</h3>
+            <p class="stats__asterisk"><strong>Source&nbsp;:</strong> Étude très scientifique de juillet 2020, produite par une célèbre université américaine</p>
           </div>
           <div class="card--tertiary">
-            <h3>94% de nos utilisateurs connaissent une hausse de leur nombre d’abonnés Instagram</h3>
-            <p>#HautLesMasques #HLM #JeSuisMasque #MasksLivesMatter</p>
+            <h3 class="stats__title">94% de nos utilisateurs connaissent une hausse de leur nombre d’abonnés Instagram</h3>
+            <p class="stats__asterisk">#HautLesMasques #HLM #JeSuisMasque #MasksLivesMatter</p>
           </div>
         </div>
         <div>
           <div class="card--tertiary">
-            <h3>Gagnez 17% d’espérance de vie en utilisant notre produit !</h3>
-            <p><strong>Source :</strong> calculemonesperancedevie.com</p>
+            <h3 class="stats__title">Gagnez 17% d’espérance de vie en utilisant notre produit !</h3>
+            <p class="stats__asterisk"><strong>Source&nbsp;:</strong> calculemonesperancedevie.com</p>
           </div>
           <div class="card--light-primary">
-            <h3>100% des masques accrochés reconnaissent une amélioration de leur qualité de vie au travail</h3>
-            <p><strong>Source :</strong> Syndicat des masques et gants chirurgicaux</p>
+            <h3 class="stats__title">100% des masques accrochés reconnaissent une amélioration de leur qualité de vie au travail</h3>
+            <p class="stats__asterisk"><strong>Source&nbsp;:</strong> Syndicat des masques et gants chirurgicaux</p>
           </div>
         </div>
         <div>
           <div class="card--light-primary">
-            <h3>88% des utilisateurs de Haut Les Masques notent une réelle amélioration de leur relations sociales</h3>
-            <p><strong>Source :</strong> Jean-Luc de Topito, spécialiste en coolitude</p>
+            <h3 class="stats__title">88% des utilisateurs de Haut Les Masques notent une réelle amélioration de leur relations sociales</h3>
+            <p class="stats__asterisk"><strong>Source&nbsp;:</strong> Jean-Luc de Topito, spécialiste en coolitude</p>
           </div>
         </div>
       </div>
@@ -85,27 +85,37 @@
   <section class="press">
     <h2>La presse parle de nous</h2>
     <div class="row">
-      <div class="col--none col--m bg-image" style="background-image: url('/img/presse.jpg');"></div>
+      <div class="col--none col--m bg-image" style="background-image: url('img/presse.jpg');"></div>
       <div class="col--l--60 col--m--80 col--100">
         <div class="card--light-primary">
-          <p><i class="fas fa-quote-left"></i>Il paraît que Kate Middleton en a acheté quatre.</p>
-          <p>−&nbsp;Paris Match</p>
+          <div class="quote">
+            <p class="stats__title"><i class="fas fa-quote-left"></i>Il paraît que Kate Middleton en a acheté quatre.</p>
+            <p class="stats__asterisk">−&nbsp;Paris Match</p>
+          </div>
         </div>
-        <div class="card">
-          <p><i class="fas fa-quote-right"></i>Une idée à couper le souffle.</p>
-          <p>Top Santé&nbsp;−</p>
-        </div>
-        <div class="card--light-primary">
-          <p><i class="fas fa-quote-left"></i>Il paraît que Kate Middleton en a acheté quatre.</p>
-          <p>−&nbsp;Paris Match</p>
-        </div>
-        <div class="card">
-          <p><i class="fas fa-quote-right"></i>Accrocher son masque, c’est décrocher de sa relation toxique au père.</p>
-          <p>Psychologies Magazine&nbsp;−</p>
+        <div class="card text-right">
+          <div class="quote">
+            <p class="stats__title"><i class="fas fa-quote-right"></i>Une idée à couper le souffle.</p>
+            <p class="stats__asterisk">Top Santé&nbsp;−</p>
+          </div>
         </div>
         <div class="card--light-primary">
-          <p><i class="fas fa-quote-left"></i>La concurrence les a pris en grippe&nbsp;!</p>
-          <p>−&nbsp;Les Échos</p>
+          <div class="quote">
+            <p class="stats__title"><i class="fas fa-quote-left"></i>Il paraît que Kate Middleton en a acheté quatre.</p>
+            <p class="stats__asterisk">−&nbsp;Paris Match</p>
+          </div>
+        </div>
+        <div class="card text-right">
+          <div class="quote">
+            <p class="stats__title"><i class="fas fa-quote-right"></i>Accrocher son masque, c’est décrocher de sa relation toxique au père.</p>
+            <p class="stats__asterisk">Psychologies Magazine&nbsp;−</p>
+          </div>
+        </div>
+        <div class="card--light-primary">
+          <div class="quote">
+            <p class="stats__title"><i class="fas fa-quote-left"></i>La concurrence les a pris en grippe&nbsp;!</p>
+            <p class="stats__asterisk">−&nbsp;Les Échos</p>
+          </div>
         </div>
       </div>
       <div class="col--l--10 col--none">
@@ -115,17 +125,16 @@
   </section>
   
   <!-- Notre gamme de produits -->
-  <div><img src="/img/fond-montagnes.svg" alt=""></div>
-  
-  <section class="bg-primary">
+  <section class="products bg-primary">
+    <!-- <div class="products__bg-graph"></div> -->
     <div class="container">
-      <h2>Notre gamme de produits</h2>
+      <h2 class="text-right">Notre gamme de produits</h2>
       <div class="row">
         <div class="col--l--33 col--m--50 col--100">
           <div class="container">
             <div class="card">
               <div>
-                <img src="/img/clou.jpg" alt="Photo d'un clou en gros plan">
+                <img src="img/clou.jpg" alt="Photo d'un clou en gros plan">
                 <a href="#" aria-label="Ajouter aux favoris"><i class="far fa-heart" title="Ajouter aux favoris"></i></a>
               </div>
               <h3>Tige renforcée hydrorésistante</h3>
@@ -153,7 +162,7 @@
                   <i class="fas fa-award"></i>
                   Meilleur vendeur
                 </div>
-                <img src="/img/punaise.jpg" alt="Photo d'une punaise en gros plan">
+                <img src="img/punaise.jpg" alt="Photo d'une punaise en gros plan">
                 <a href="#" aria-label="Ajouter aux favoris"><i class="far fa-heart" title="Ajouter aux favoris"></i></a>
               </div>
               <h3>Patère en matière recyclée issue du commerce équitable</h3>
@@ -181,7 +190,7 @@
           <div class="container">
             <div class="card">
               <div>
-                <img src="/img/porte-masque.jpg" alt="Photo d'un porte-manteau en forme de branche">
+                <img src="img/porte-masque.jpg" alt="Photo d'un porte-manteau en forme de branche">
                 <a href="#" aria-label="Ajouter aux favoris"><i class="far fa-heart" title="Ajouter aux favoris"></i></a>
               </div>
               <h3>Branche autonome sur pied</h3>
@@ -211,7 +220,7 @@
       <p>100% de clients satisfaits</p>
       <div class="card">
         <i class="fas fa-quote-right"></i>
-        <img src="/img/masque-anonyme.jpg" alt="Photo d'un masque flou"/>
+        <img src="img/masque-anonyme.jpg" alt="Photo d'un masque flou"/>
         <p>Masque chirurgical dont l’anonymat a été préservé</p>
       </div>
       <p>*Selon ma mère</p>
@@ -243,7 +252,7 @@
         </div>
         <div class="col--100 col--l--50">
           <div class="container">
-            <img src="/img/les-visionnaires.jpg" alt="Deux personnes de dos, assises face à la mer.">
+            <img src="img/les-visionnaires.jpg" alt="Deux personnes de dos, assises face à la mer.">
           </div>
         </div>
       </div>
@@ -258,6 +267,6 @@
       <p><a href="https://github.com/nawel-aa">Contactez-nous</a></p>
     </div>
   </footer>
-  <script src="/js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

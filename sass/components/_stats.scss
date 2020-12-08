@@ -3,11 +3,14 @@
     font-size: $font-size * 1.125;
     font-weight: bold;
     margin-bottom: $pad-tb;
-    + .stats__asterisk {
-      margin-top: -($pad-tb / 2)
-    }
+    font-family: $font-default;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
   }
   &__asterisk {
-    font-size: $font-size * 0.75;
+    font-style: italic;
+    font-family: $font-title;
+    font-size: $font-size * 0.875;
   }
 }

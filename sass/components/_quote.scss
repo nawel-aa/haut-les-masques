@@ -1,12 +1,33 @@
 .quote {
   position: relative;
   z-index: 1;
-  margin: $pad-tb * 2 $pad;
-  padding-left: 2rem;
+  margin: $pad-tb * 2 $pad-side;
+  padding: 0 2rem;
   font-family: $font-title;
   font-size: $font-size * 1.5;
   font-weight: 800;
   line-height: 1.5;
+
+  .stats__title {
+    margin-bottom: $pad-tb / 2;
+
+    i {
+      top: -3.5rem;
+    }
+
+    .fa-quote-right {
+      right: -2rem;
+      color: $colour-secondary-bg;
+    }
+    
+    .fa-quote-left {
+      color: $colour-tertiary;
+    }
+  }
+
+  .stats__asterisk {
+    font-weight: 400;
+  }
 
   i {
     position: absolute;

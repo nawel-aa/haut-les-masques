@@ -1,0 +1,46 @@
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideshow {
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  transition: all 500ms;
+  
+  .slide {
+    position: absolute;
+    transform: translateX(-100%);
+
+    &.active {
+      animation-duration: 1s;
+      animation-name: slide-in;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  &__tracker {
+    margin-top: $pad-tb;
+
+    span {
+      display: inline-block;
+      cursor: pointer;
+      margin-right: 5px;
+      width: 16px;
+      height: 16px;
+      background-color: $colour-tertiary;
+      border-radius: 100%;
+
+      &.active {
+        background-color: $colour-primary;
+      }
+    }
+  }
+}

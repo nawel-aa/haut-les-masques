@@ -1,10 +1,14 @@
 .intro {
-  background-image: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url('/img/produit.png');
+  background-image: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url('../img/produit.png');
   background-position:  95% 0;
   background-size: contain;
   background-repeat: no-repeat;
 
   @include responsive--l {
-    background-image: url('/img/produit.png');
+    background-image: url('../img/produit.png');
+  }
+
+  ul {
+    margin-bottom: $pad-tb;
   }
 }

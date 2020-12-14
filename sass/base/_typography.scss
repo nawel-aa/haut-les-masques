@@ -48,10 +48,38 @@ strong {
   font-weight: bold;
 }
 
+em {
+  font-style: italic;
+}
+
 p {
   margin-bottom: $pad-tb / 2;
 }
 
+a {
+  color: $colour-txt;
+  text-decoration: none;
+  background-color: $colour-secondary-bg;
+  transition: all 350ms;
+
+  i.external-link {
+    font-size: $font-size * 0.875;
+    color: $colour-secondary;
+  }
+
+  &:hover {
+    background-color: $colour-primary-bg;
+  }
+}
+
 .text-right {
   text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: scale-color($colour-txt, $lightness: 25%);
 }

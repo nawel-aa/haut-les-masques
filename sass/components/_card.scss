@@ -1,6 +1,9 @@
 .card {
   padding: $pad-tb $pad-side * 2;
   background-color: $colour-alt-bg;
+  border-radius: 4px;
+  position: relative;
+  box-sizing: border-box;
 
   &--primary {
     @extend .card;

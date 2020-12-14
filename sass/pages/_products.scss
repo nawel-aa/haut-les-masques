@@ -4,4 +4,108 @@
   h2 {
     color: $colour-txt-alt;
   }
+
+  .row {
+    .container {
+      height: 100%;
+      box-sizing: border-box;
+      padding: $pad-tb / 2 0;
+
+      @include responsive--m {
+        padding: $pad;
+      }
+    }
+  }
+
+  .card {
+    padding: $pad-tb / 2;
+    height: 100%;
+  }
+
+  &__banner {
+    position: relative;
+
+    a {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      color: $colour-secondary;
+      font-size: $font-size * 1.25;
+      background-color: inherit;
+
+      &:hover {
+        color: $colour-primary;
+        background-color: inherit;
+      }
+    }
+  }
+
+  &__award {
+    position: absolute;
+    top: $pad-tb;
+    left: 0;
+    z-index: 2;
+    background-color: $colour-primary;
+    font-family: $font-title;
+    color: $colour-txt-alt;
+    font-weight: bold;
+    font-size: $font-size * 0.8;
+    padding: 2px $pad-side 2px $pad-side * 2;
+    border-radius: 0 4px 4px 0;
+
+    i {
+      color: $colour-secondary;
+      position: absolute;
+      left: 2px;
+      font-size: $font-size * 2.5;
+    }
+  }
+
+  h3 {
+    padding-top: $pad-tb / 2;
+    padding-bottom: $pad-tb / 3;
+  }
+
+  &__price {
+    font-family: $font-title;
+  }
+
+  &__description {
+    margin-bottom: $pad-tb;
+  }
+
+  input[type="radio"] {
+    display: none;
+
+    &:checked + label {
+      border: 2px solid $colour-primary;
+    }
+  }
+
+  &__palette {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    cursor: pointer;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    font-size: $font-size * 1.5;
+    cursor: pointer;
+  }
+
+  &__quantity {
+    padding: 0 $pad-side;
+  }
+
+  &__type-selected {
+    font-size: $font-size * 0.875;
+    font-family: $font-title;
+    margin-bottom: $pad-tb;
+  }
 }

@@ -7,9 +7,24 @@ LAYOUT: FLEX GRID
   display: flex;
   flex-wrap: wrap;
   
-  &--space-bet {
+  &--justify-space-bet {
     @extend .row;
     justify-content: space-between;
+  }
+
+  &--justify-end {
+    @extend .row;
+    justify-content: end;
+  }
+
+  &--align-center {
+    @extend .row;
+    align-items: center;
+  }
+
+  &--align-content-space-bet {
+    @extend .row;
+    align-content: space-between;
   }
 }
 

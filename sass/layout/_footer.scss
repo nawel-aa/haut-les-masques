@@ -1,0 +1,20 @@
+footer {
+  background-color: $colour-primary;
+  color: $colour-txt-alt;
+  font-size: $font-size * 0.875;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+      color: $colour-secondary-bg;
+    }
+  }
+}

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+  <script src="js/main.js" type="module"></script>
 </head>
 <body>
   
@@ -21,7 +22,7 @@
           <h1>Hauts les masques</h1>
           <p>Nous portons vos masques quand vous ne les portez pas.</p>
           <div class="border-left">
-            <ul class="mb">
+            <ul>
               <li>Vous souhaitez vous protéger des maladies aéroportées ?</li>
               <li>Vous voulez bailler en public sans bouger la main ?</li>
               <li>Vous n’avez jamais eu les moyens de vous payer un orthodontiste ?</li>
@@ -101,8 +102,8 @@
         </div>
         <div class="card--light-primary">
           <div class="quote">
-            <p class="stats__title"><i class="fas fa-quote-left"></i>Il paraît que Kate Middleton en a acheté quatre.</p>
-            <p class="stats__asterisk">−&nbsp;Paris Match</p>
+            <p class="stats__title"><i class="fas fa-quote-left"></i>Il s’accorde très bien avec la nouvelle collection Blanc d’Oeuf de Dulux©.</p>
+            <p class="stats__asterisk">−&nbsp;Maison et Travaux</p>
           </div>
         </div>
         <div class="card text-right">
@@ -132,79 +133,105 @@
       <div class="row">
         <div class="col--l--33 col--m--50 col--100">
           <div class="container">
-            <div class="card">
-              <div>
-                <img src="img/clou.jpg" alt="Photo d'un clou en gros plan">
-                <a href="#" aria-label="Ajouter aux favoris"><i class="far fa-heart" title="Ajouter aux favoris"></i></a>
-              </div>
-              <h3>Tige renforcée hydrorésistante</h3>
-              <p>24.99€</p>
-              <p>Un porte-masque incassable, pouvant aller sous l’eau jusqu’à -50m de profondeur.</p>
-              <div class="row--space-bet">
-                <p>3 cm</p>
-                <p>5 cm</p>
-                <div>
-                  <button aria-label="Moins"><i class="fas fa-minus" title="Moins"></i></button>
-                  <p>1</p>
-                  <button aria-label="Plus"><i class="fas fa-plus" title="Plus"></i></button>
+            <div class="card row--align-content-space-bet">
+              <div class="col--100">
+                <div class="products__banner">
+                  <img src="img/clou.jpg" alt="Photo d'un clou en gros plan">
+                  <a href="#" aria-label="Ajouter aux favoris"><i class="far fa-heart" title="Ajouter aux favoris"></i></a>
                 </div>
+                <h3>Tige renforcée hydrorésistante</h3>
+                <p class="text-muted products__price">24.99€</p>
+                <p class="products__description">Un porte-masque incassable, pouvant aller sous l’eau jusqu’à 50 mètres de profondeur.</p>
               </div>
-              <p>Format sélectionné&nbsp;: <span>3 centimètres</span></p>
-              <a href="#">Acheter</a>
+              <div class="col--100">
+                <div class="row--justify-space-bet row--align-center">
+                  <div class="row">
+                    <input type="radio" data-product-number="1" value="3 centimètres" name="product-1-size" id="product-1-size-3" checked="checked">
+                    <label for="product-1-size-3" class="tag">3 cm</label>
+                    <input type="radio" name="product-1-size" data-product-number="1" value="5 centimètres" id="product-1-size-5">
+                    <label for="product-1-size-5"class="tag">5 cm</label>
+                  </div>
+                  <div class="row--align-center row--justify-end">
+                    <button class="minus" aria-label="Moins"><i class=" text-muted fas fa-minus" title="Moins"></i></button>
+                    <span class="products__quantity" data-product-quantity="0">0</span>
+                    <button class="plus" aria-label="Plus"><i class="text-muted fas fa-plus" title="Plus"></i></button>
+                  </div>
+                </div>
+                <p class="text-muted products__type-selected">Format sélectionné&nbsp;: <span id="product-1-selection">3 centimètres</span></p>
+                <a class="btn" href="#">Acheter</a>
+              </div>
             </div>
           </div>
         </div>
         <div class="col--l--33 col--m--50 col--100">
           <div class="container">
-            <div class="card">
-              <div>
-                <div>
+            <div class="card row--align-content-space-bet">
+              <div class="col--100">
+                <div class="products__award">
                   <i class="fas fa-award"></i>
                   Meilleur vendeur
                 </div>
-                <img src="img/punaise.jpg" alt="Photo d'une punaise en gros plan">
-                <a href="#" aria-label="Ajouter aux favoris"><i class="far fa-heart" title="Ajouter aux favoris"></i></a>
-              </div>
-              <h3>Patère en matière recyclée issue du commerce équitable</h3>
-              <p>19.99€</p>
-              <p>Un porte-masque épuré, imperméable et facilement transportable.</p>
-              <div class="row--space-bet">
-                <div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
+                <div class="products__banner">
+                  <img src="img/punaise.jpg" alt="Photo d'une punaise en gros plan">
+                  <a href="#" aria-label="Ajouter aux favoris"><i class="far fa-heart" title="Ajouter aux favoris"></i></a>
                 </div>
-                <div>
-                  <button aria-label="Moins"><i class="fas fa-minus" title="Moins"></i></button>
-                  <p>1</p>
-                  <button aria-label="Plus"><i class="fas fa-plus" title="Plus"></i></button>
-                </div>
+                <h3>Patère en matière recyclée issue du commerce équitable</h3>
+                <p class="text-muted products__price">19.99€</p>
+                <p class="products__description">Un porte-masque épuré, imperméable et facilement transportable.</p>
               </div>
-              <p>Colori sélectionné&nbsp;: <span>arbre solitaire</span></p>
-              <a href="#">Acheter</a>
+              <div class="col--100">
+                <div class="row--justify-space-bet row--align-center">
+                  <div class="row">
+                    <input type="radio" name="product-2-color" data-product-number="2" id="product-2-color-1" value="arbre solitaire" checked>
+                    <label class="products__palette" style="background-color: #01B19B;" for="product-2-color-1"></label>
+                    <input type="radio" name="product-2-color" data-product-number="2" value="rouille d'été" id="product-2-color-2">
+                    <label class="products__palette" style="background-color: #EF4800;" for="product-2-color-2"></label>
+                    <input type="radio" name="product-2-color" data-product-number="2" value="soleil de minuit" id="product-2-color-3">
+                    <label class="products__palette" style="background-color: #2100EF;" for="product-2-color-3"></label>
+                    <input type="radio" name="product-2-color" data-product-number="2" value="urine sur neige" id="product-2-color-4">
+                    <label class="products__palette" style="background-color: #EEC800;" for="product-2-color-4"></label>
+                  </div>
+                  <div class="row--align-center">
+                    <button class="minus" aria-label="Moins"><i class="text-muted fas fa-minus" title="Moins"></i></button>
+                    <span class="products__quantity" data-product-quantity="0">0</span>
+                    <button class="plus" aria-label="Plus"><i class="text-muted fas fa-plus" title="Plus"></i></button>
+                  </div>
+                </div>
+                <p class="text-muted products__type-selected">Colori sélectionné&nbsp;: <span id="product-2-selection">arbre solitaire</span></p>
+                <a class="btn" href="#">Acheter</a>
+              </div>
             </div>
           </div>
         </div>
         <div class="col--l--33 col--m--none">
           <div class="container">
-            <div class="card">
-              <div>
-                <img src="img/porte-masque.jpg" alt="Photo d'un porte-manteau en forme de branche">
-                <a href="#" aria-label="Ajouter aux favoris"><i class="far fa-heart" title="Ajouter aux favoris"></i></a>
+            <div class="card row--align-content-space-bet">
+              <div class="col--100">
+                <div class="products__banner">
+                  <img src="img/porte-masque.jpg" alt="Photo d'un porte-manteau en forme de branche">
+                  <a href="#" aria-label="Ajouter aux favoris"><i class="far fa-heart" title="Ajouter aux favoris"></i></a>
+                </div>
+                <h3>Branche autonome sur pied</h3>
+                <p class="text-muted products__price">94.99€</p>
+                <p class="products__description">Un porte-masque écologique en bois de murier, pour régler la crise écologique et la crise sanitaire en même temps.</p>
               </div>
-              <h3>Branche autonome sur pied</h3>
-              <p>94.99€</p>
-              <p>Un porte-masque écologique en bois de murier, pour régler la crise écologique et la crise sanitaire en même temps.</p>
-              <div class="row--space-bet">
-                <p>30 cm</p>
-                <p>40 cm</p>
-                <button aria-label="Moins"><i class="fas fa-minus" title="Moins"></i></button>
-                <p>1</p>
-                <button aria-label="Plus"><i class="fas fa-plus" title="Plus"></i></button>
+              <div class="col--100">
+                <div class="row--justify-space-bet row--align-center">
+                  <div class="row">
+                    <input type="radio" name="product-3-size" data-product-number="3" value="30 centimètres" id="product-3-size-30" checked>
+                    <label class="tag" for="product-3-size-30">30 cm</label>
+                    <input type="radio" name="product-3-size" data-product-number="3" value="40 centimètres" id="product-3-size-40">
+                    <label class="tag" for="product-3-size-40">40 cm</label>
+                  </div>
+                  <div class="row--align-center">
+                    <button class="minus" aria-label="Moins"><i class="fas fa-minus text-muted" title="Moins"></i></button>
+                    <span class="products__quantity" data-product-quantity="0">0</span>
+                    <button class="plus" aria-label="Plus"><i class="fas fa-plus text-muted" title="Plus"></i></button>
+                  </div>
+                </div>
+                <p class="text-muted products__type-selected">Format sélectionné&nbsp;: <span id="product-3-selection">30 centimètres</span></p>
+                <a class="btn" href="#">Acheter</a>
               </div>
-              <p>Format sélectionné&nbsp;: <span>30 centimètres</span></p>
-              <a href="#">Acheter</a>
             </div>
           </div>
         </div>
@@ -214,16 +241,39 @@
   
   <!-- Témoignages -->
   
-  <section>
+  <section class="bg-image testimonials" style="background-image: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url('img/temoignages-fond.jpg');">
     <div class="container">
-      <h2>Témoignages</h2>
-      <p>100% de clients satisfaits</p>
-      <div class="card">
-        <i class="fas fa-quote-right"></i>
-        <img src="img/masque-anonyme.jpg" alt="Photo d'un masque flou"/>
-        <p>Masque chirurgical dont l’anonymat a été préservé</p>
+      <h2 class="text-center">Témoignages</h2>
+      <p class="text-center">100% de clients satisfaits*</p>
+      <div class="card text-center">
+        <div class="quote">
+          <i class="text-center fas fa-quote-right"></i>
+        </div>
+        <div class="slideshow">
+          <div class="slide active">
+            <p>Nous avons certes une durée de vie limitée dû à notre caractère jetable, mais ce n’est pas pour autant que nous apprécions travailler dans des conditions sommaires. Être accroché est bien plus plaisant et nous procure une réelle satisfaction professionnelle.</p>
+            <img class="avatar" src="img/masque-anonyme.jpg" alt="Photo d'un masque flou"/>
+            <p class="testimonials__user">Masque chirurgical dont l’anonymat a été préservé</p>
+          </div>
+          <div class="slide">
+            <p>Certes, la Chine a créé ce virus pour prendre la place mondiale n°1 et nous implanter des puces grâce aux vaccins. Mais ils n’avaient pas prévu la création de Haut Les Masques ! Grâce à cette invention, nous allons pouvoir lutter plus efficacement contre ce coup d’état sanitaire et empêcher la 5G d’arriver sur nos territoires.</p>
+            <img class="avatar" src="img/diego-ragout.jpg" alt="Photo d'un homme portant ses lunettes en-dessous de son nez."/>
+            <p class="testimonials__user">Professeur Diego Ragoût, Ph. D., chaman, lanceur d’alerte et de javelot, à ses heures perdues</p>
+          </div>
+          <div class="slide">
+            <p>Je lui ai toujours dit que la seule limite, c’était son imagination. Je ne pensais pas qu’elle irait si loin…</p>
+            <img class="avatar" src="img/ma-mere.jpg" alt="Photo de ma mère qui désaprouve."/>
+            <p class="testimonials__user">Ma mère</p>
+          </div>
+
+        </div>
+        <div class="slideshow__tracker">
+          <span data-slide-number="0" class="active"></span>
+          <span data-slide-number="1"></span>
+          <span data-slide-number="2"></span>
+        </div>
       </div>
-      <p>*Selon ma mère</p>
+      <p class="stats__asterisk">*Sur un échantillon de 0 client</p>
     </div>
   </section>
   
@@ -231,7 +281,7 @@
   
   <section>
     <div class="container">
-      <div class="row--space-bet">
+      <div class="row--justify-space-bet">
         <div class="col--100 col--l--50">
           <div class="container">
             <h2>Qui sommes-nous&nbsp;?</h2>
@@ -262,11 +312,10 @@
   <!-- Footer -->
   
   <footer>
-    <div class="container">
+    <div class="container text-center">
       <p>Des questions sur ce projet un peu fou ?</p>
       <p><a href="https://github.com/nawel-aa">Contactez-nous</a></p>
     </div>
   </footer>
-  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,12 +1,17 @@
 .quote {
   position: relative;
   z-index: 1;
-  margin: $pad-tb * 2 $pad-side;
-  padding: 0 2rem;
   font-family: $font-title;
   font-size: $font-size * 1.5;
   font-weight: 800;
   line-height: 1.5;
+  padding: 0;
+  margin: $pad-tb 0;
+  
+  @include responsive--m {
+    margin: $pad-tb * 2 $pad-side;
+    padding: 0 2rem;
+  }
 
   .stats__title {
     margin-bottom: $pad-tb / 2;

@@ -1,0 +1,23 @@
+{
+  "name": "haut-les-masques",
+  "version": "1.0.0",
+  "description": "Funny website fake-selling face mask holders",
+  "main": "js/main.js",
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nawel-aa/haut-les-masques.git"
+  },
+  "author": "Nawel Aammar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nawel-aa/haut-les-masques/issues"
+  },
+  "homepage": "https://github.com/nawel-aa/haut-les-masques#readme"
+}

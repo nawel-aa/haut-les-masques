@@ -1,13 +1,18 @@
 .btn {
   width: 100%;
+  border: none;
   box-sizing: border-box;
   background-color: $colour-secondary;
   font-family: $font-title;
   font-size: $font-size * 1.25;
-  display: block;
   color: $colour-txt;
-  text-decoration: none;
   text-align: center;
   padding: $pad-tb / 3 $pad-side;
   border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 350ms;
+
+  &:hover {
+    background-color: $colour-secondary-bg;
+  }
 }

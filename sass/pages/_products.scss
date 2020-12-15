@@ -92,7 +92,7 @@
     cursor: pointer;
   }
 
-  button {
+  .minus, .plus {
     background: transparent;
     border: none;
     font-size: $font-size * 1.5;

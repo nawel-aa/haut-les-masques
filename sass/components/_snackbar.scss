@@ -1,0 +1,37 @@
+@keyframes fade-in {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 35px;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    bottom: 35px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+#snackbar {
+  visibility: hidden;
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  z-index: 5;
+  padding: $pad-tb / 2 $pad-side;
+  border-radius: 4px;
+  background-color: $colour-secondary-bg;
+  
+  &.active {
+    animation: fade-in 500ms, fade-out 500ms 2.5s;
+    visibility: visible;
+  }
+}

@@ -1,5 +1,3 @@
-import AOS from 'aos';
-
 import { initExternalLinksIcons } from './base/external_links.js';
 import { initSlideshow } from './components/slideshow.js';
 import { initItemCounter } from './components/item_counter.js';

@@ -35,7 +35,7 @@ const initSlideshow = () => {
   };
   
   setSlideshowHeight();
-  // setInterval(autorun, 2000);
+  // setInterval(autorun, 5000);
   
   trackers.forEach((tracker) => {
     tracker.addEventListener('click', goToSlide);

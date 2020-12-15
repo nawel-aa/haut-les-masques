@@ -4,7 +4,6 @@
 // @import "utils/placeholders";
 @import "base/base";
 @import "base/typography";
-@import "base/scroll_animations";
 @import "components/stats";
 @import "components/card";
 @import "components/quote";
@@ -20,3 +19,4 @@
 @import "pages/press";
 @import "pages/products";
 @import "pages/testimonials";
+@import "../node_modules/aos/src/sass/aos";

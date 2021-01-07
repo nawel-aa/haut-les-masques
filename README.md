@@ -1,7 +1,7 @@
 # Haut les masques ! :mask:
 :computer:[Site web](https://nawel-aa.github.io/haut-les-masques/)
 
-Site web prétendant vendre des "portes-masque" beaucoup trop chers et snobs -- en réalité de simples punaises et clous. :pushpin:
+Site web prétendant vendre des "porte-masques" beaucoup trop chers et snobs -- en réalité de simples punaises et clous. :pushpin:
 Il a été réalisé pour la blague, après que je me sois plainte à tout le monde de l'absence de porte-masque durant la pandémie de COVID-19, et le fait que personne n'en profitait.
 
 Crédits :
